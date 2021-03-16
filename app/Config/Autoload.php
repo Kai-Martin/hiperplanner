@@ -42,7 +42,8 @@ class Autoload extends AutoloadConfig
 	public $psr4 = [
 		APP_NAMESPACE => APPPATH, // For custom app namespace
 		'Config'      => APPPATH . 'Config',
-		'Auth'		  => APPPATH . 'ThirdParty/Auth',
+		'App'           => APPPATH,
+		'Auth'		  => APPPATH . 'ThirdParty/Auth'
 	];
 
 	/**
