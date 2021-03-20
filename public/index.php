@@ -34,6 +34,16 @@ $paths = new Config\Paths();
 $bootstrap = rtrim($paths->systemDirectory, '\\/ ') . DIRECTORY_SEPARATOR . 'bootstrap.php';
 $app       = require realpath($bootstrap) ?: $bootstrap;
 
+# DEBUG =======================================================G
+   if(1) :
+     echo '<br>index.php ==> ' .__file__;
+     echo '<br>FCPATH    ==> ' .FCPATH;
+     echo '<pre>$paths   ==> '; print_r($paths);
+     die;
+   endif;
+# DEBUG =======================================================G
+$app->run();
+
 /*
  *---------------------------------------------------------------
  * LAUNCH THE APPLICATION
