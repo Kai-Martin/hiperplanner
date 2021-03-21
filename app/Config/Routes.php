@@ -2,7 +2,7 @@
 
 namespace Config;
 
-	var_dump($_ENV); die;
+	
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
