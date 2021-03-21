@@ -1,6 +1,8 @@
 <?php
-echo __file__; die; 
+
 namespace Config;
+
+echo __file__; die;
 
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
