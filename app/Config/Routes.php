@@ -2,6 +2,7 @@
 
 namespace Config;
 
+	echo $baseURL; die;
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
