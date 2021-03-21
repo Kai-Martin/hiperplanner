@@ -37,8 +37,6 @@ class BaseController extends Controller
 	 */
 	public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
 	{
-		echo __file__; die;
-		
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
 
