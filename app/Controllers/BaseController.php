@@ -1,5 +1,5 @@
 <?php
-
+echo __file__; die; 
 namespace App\Controllers;
 
 use CodeIgniter\Controller;

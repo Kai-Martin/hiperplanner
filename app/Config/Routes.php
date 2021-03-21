@@ -1,5 +1,5 @@
 <?php
-
+echo __file__; die; 
 namespace Config;
 
 // Create a new instance of our RouteCollection class.
