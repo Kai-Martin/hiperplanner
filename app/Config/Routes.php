@@ -3,11 +3,13 @@
 namespace Config;
 
 $request = \Config\Services::request();
+
 $uri = $request->uri;
 echo (string)$request->uri;
 
-echo "<br>Segments<br>";
+echo "<br>";
 d( $uri->getSegments() );
+echo "<br> total segments:";
 echo $uri->getTotalSegments();
 
 die;
