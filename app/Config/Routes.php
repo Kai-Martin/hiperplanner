@@ -2,6 +2,15 @@
 
 namespace Config;
 
+$uri = $request->uri;
+echo (string)$request->uri;
+
+echo "<br>Segments<br>";
+echo $uri->getSegments();
+echo $uri->getTotalSegments();
+
+die;
+
 
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
