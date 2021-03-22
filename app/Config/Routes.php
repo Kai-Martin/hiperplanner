@@ -4,15 +4,7 @@ namespace Config;
 
 $request = \Config\Services::request();
 
-$uri = $request->uri;
-echo (string)$request->uri;
-
-echo "<br>";
-d( $uri->getSegments() );
-echo "<br> total segments:";
-echo $uri->getTotalSegments();
-
-die;
+dd( $request->uri);
 
 
 // Create a new instance of our RouteCollection class.
