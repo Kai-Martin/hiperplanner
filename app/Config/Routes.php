@@ -2,6 +2,7 @@
 
 namespace Config;
 
+$request = \Config\Services::request();
 $uri = $request->uri;
 echo (string)$request->uri;
 
