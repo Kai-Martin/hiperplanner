@@ -4,7 +4,12 @@ namespace Config;
 
 $request = \Config\Services::request();
 
-dd( $request->uri);
+d( $request->uri);
+
+echo "<br><br>";
+
+echo (string)$request->uri;
+die;
 
 
 // Create a new instance of our RouteCollection class.
