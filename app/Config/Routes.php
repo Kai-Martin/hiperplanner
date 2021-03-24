@@ -20,6 +20,7 @@ $request = \Config\Services::request();
 // echo $request->uri->path;
 //die;
 $request->uri->setPath('');
+echo (string)$request->uri;
 
 
 // Create a new instance of our RouteCollection class.
