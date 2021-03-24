@@ -2,7 +2,7 @@
 
 namespace Config;
 
-$request = \Config\Services::request();
+//$request = \Config\Services::request();
 
 // d( $request->uri);
 // d( $request );
