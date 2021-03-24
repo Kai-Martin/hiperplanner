@@ -10,7 +10,7 @@ echo "<br><br>";
 
 echo (string)$request->uri;
 
-echo $baseURL;
+echo base_url();
 die;
 
 
