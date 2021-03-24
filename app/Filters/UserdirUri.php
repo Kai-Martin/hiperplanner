@@ -12,4 +12,9 @@ class UserdirUri implements FilterInterface
     {
         $request->uri->setPath('');
     }
+
+    public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
+    {
+        // Do something here
+    }
 }
