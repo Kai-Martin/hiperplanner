@@ -6,7 +6,7 @@ $request = \Config\Services::request();
 //$request->uri->setPath('');
 
 // d( $request->uri);
- d( $request );
+// d( $request );
 //
 // echo "<br><br>";
 // echo "Req uri: ";
@@ -19,7 +19,7 @@ $request = \Config\Services::request();
 // echo "<br><br>";
 // echo "Req path: ";
 // echo $request->uri->path;
-die;
+//die;
 
 
 
