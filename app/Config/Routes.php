@@ -2,27 +2,6 @@
 
 namespace Config;
 
-//$request = \Config\Services::request();
-//$request->uri->setPath('');
-
-// d( $request->uri);
-// d( $request );
-//
-// echo "<br><br>";
-// echo "Req uri: ";
-//echo (string)$request->uri;
-//
-// echo "<br><br>";
-// echo "config base uri: ";
-// echo $request->config->baseURL;
-//
-// echo "<br><br>";
-// echo "Req path: ";
-// echo $request->uri->path;
-//die;
-
-
-
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -53,11 +32,14 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
 
-//prefix workaround
-//$routes->get('/~kaimartin/hiperplanner', 'Home::index');
-//$routes->get('/~kaimartin/hiperplanner/test', 'Home::index');
+// $routes->get('/', 'Home::index');
+
+//prefix workaround for mod_userdir issue
+$path = '/~kaimartin/hiperplanner';
+
+$routes->get($path, 'Home::index');
+$routes->get($path . '/test', 'Home::index');
 
 /*
  * --------------------------------------------------------------------
