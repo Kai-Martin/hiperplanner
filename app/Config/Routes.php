@@ -9,6 +9,8 @@ d( $request->uri);
 echo "<br><br>";
 
 echo (string)$request->uri;
+
+echo BASE_URL;
 die;
 
 
