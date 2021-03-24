@@ -10,9 +10,9 @@ class UserdirUri implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
-        //dd($request);
+        d($request);
 
-        $request->uri->setPath('');
+        //$request->uri->setPath('');
 
         //die;
     }

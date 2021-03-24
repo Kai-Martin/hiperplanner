@@ -31,7 +31,7 @@ class Filters extends BaseConfig
 	public $globals = [
 		'before' => [
 			'csrf',
-			'userdir_hack',
+			//'userdir_hack',
 			// 'honeypot',
 		],
 		'after'  => [
