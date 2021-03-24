@@ -35,10 +35,15 @@ $routes->setAutoRoute(true);
 
 // $routes->get('/', 'Home::index');
 
-//prefix workaround for mod_userdir issue
+// Prefix workaround for mod_userdir issue
+// Make ALL your routes start with the "path" by pre-pending
+// the route pattern with this variable:
 $path = '/~kaimartin/hiperplanner';
 
+// defualt route:
 $routes->get($path, 'Home::index');
+
+// example route:
 $routes->get($path . '/test', 'Home::index');
 
 /*
