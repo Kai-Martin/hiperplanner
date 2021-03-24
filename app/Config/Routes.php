@@ -2,14 +2,14 @@
 
 namespace Config;
 
-//$request = \Config\Services::request();
+$request = \Config\Services::request();
 
 // d( $request->uri);
 // d( $request );
 //
 // echo "<br><br>";
 // echo "Req uri: ";
-// echo (string)$request->uri;
+ echo (string)$request->uri;
 //
 // echo "<br><br>";
 // echo "config base uri: ";
@@ -18,7 +18,7 @@ namespace Config;
 // echo "<br><br>";
 // echo "Req path: ";
 // echo $request->uri->path;
-//die;
+die;
 
 
 
