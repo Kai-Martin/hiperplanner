@@ -2,7 +2,7 @@
 
 namespace Config;
 
-$request = \Config\Services::request();
+//$request = \Config\Services::request();
 
 // d( $request->uri);
 // d( $request );
@@ -19,8 +19,7 @@ $request = \Config\Services::request();
 // echo "Req path: ";
 // echo $request->uri->path;
 //die;
-$request->uri->setPath('');
-echo (string)$request->uri;
+
 
 
 // Create a new instance of our RouteCollection class.

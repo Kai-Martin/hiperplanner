@@ -19,6 +19,7 @@ class Filters extends BaseConfig
 		'csrf'     => CSRF::class,
 		'toolbar'  => DebugToolbar::class,
 		'honeypot' => Honeypot::class,
+		'userdir_hack' => App\Filters\UserdirUri::class
 	];
 
 	/**
@@ -29,8 +30,9 @@ class Filters extends BaseConfig
 	 */
 	public $globals = [
 		'before' => [
-			// 'honeypot',
 			'csrf',
+			'userdir_hack',
+			// 'honeypot',
 		],
 		'after'  => [
 			'toolbar',
