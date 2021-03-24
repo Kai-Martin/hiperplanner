@@ -8,9 +8,16 @@ d( $request->uri);
 
 echo "<br><br>";
 
+echo "Req uri: ";
 echo (string)$request->uri;
+echo "<br><br>";
 
+echo "config base uri: ";
 echo base_url();
+
+echo "<br><br>";
+echo "Req path: ";
+echo $request->getPath();
 die;
 
 
