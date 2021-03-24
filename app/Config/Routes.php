@@ -2,7 +2,7 @@
 
 namespace Config;
 
-$request = \Config\Services::request();
+//$request = \Config\Services::request();
 //$request->uri->setPath('');
 
 // d( $request->uri);
@@ -53,9 +53,11 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/~kaimartin/hiperplanner', 'Home::index');
+$routes->get('/', 'Home::index');
 
-$routes->get('/~kaimartin/hiperplanner/start', 'Home::index');
+//prefix workaround
+//$routes->get('/~kaimartin/hiperplanner', 'Home::index');
+//$routes->get('/~kaimartin/hiperplanner/test', 'Home::index');
 
 /*
  * --------------------------------------------------------------------
