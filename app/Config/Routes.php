@@ -4,22 +4,22 @@ namespace Config;
 
 $request = \Config\Services::request();
 
-d( $request->uri);
-d( $request );
-
-echo "<br><br>";
-
-echo "Req uri: ";
-echo (string)$request->uri;
-echo "<br><br>";
-
-echo "config base uri: ";
-echo base_url();
-
-echo "<br><br>";
-echo "Req path: ";
-echo $request->uri->getPath();
-die;
+// d( $request->uri);
+// d( $request );
+//
+// echo "<br><br>";
+// echo "Req uri: ";
+// echo (string)$request->uri;
+//
+// echo "<br><br>";
+// echo "config base uri: ";
+// echo $request->config->baseURL;
+//
+// echo "<br><br>";
+// echo "Req path: ";
+// echo $request->uri->path;
+//die;
+$request->uri->setPath('');
 
 
 // Create a new instance of our RouteCollection class.
