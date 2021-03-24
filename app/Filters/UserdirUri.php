@@ -11,7 +11,13 @@ class UserdirUri implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         $reqObj = \Config\Services::request();
-        $reqObj->uri->setPath('');
+         d( $reqObj->uri);
+         d( $reqObj );
+
+         echo "<br><br>";
+         echo "Req uri: ";
+         echo (string)$reqObj->uri;
+        //$reqObj->uri->setPath('');
     }
 
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
