@@ -5,6 +5,7 @@ namespace Config;
 $request = \Config\Services::request();
 
 d( $request->uri);
+d( $request );
 
 echo "<br><br>";
 
@@ -17,7 +18,7 @@ echo base_url();
 
 echo "<br><br>";
 echo "Req path: ";
-echo $request->getPath();
+echo $request->uri->getPath();
 die;
 
 
