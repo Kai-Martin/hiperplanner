@@ -17,7 +17,8 @@ class UserdirUri implements FilterInterface
         //  echo "<br><br>";
         //  echo "Req uri: ";
         //  echo (string)$reqObj->uri;
-        $reqObj->uri->setPath('');
+        //$reqObj->uri->setPath('');
+        dd($request);
         //die;
     }
 
