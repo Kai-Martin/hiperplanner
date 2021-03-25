@@ -41,10 +41,10 @@ $routes->setAutoRoute(true);
 $path = '/~kaimartin/hiperplanner';
 
 // defualt route:
-$routes->get($path, 'Home::index');
+$routes->get('/', 'Home::index');
 
 // example route:
-$routes->get($path . '/test', 'Home::index');
+//$routes->get($path . '/test', 'Home::index');
 
 /*
  * --------------------------------------------------------------------
