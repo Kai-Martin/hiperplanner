@@ -10,9 +10,8 @@ class Auth implements FilterInterface
     {
         // if user not logged in
         if(! session()->get('logged_in')){
-            $path = '/~kaimartin/hiperplanner';
             // then redirct to login page
-            return redirect()->to($path . '/login');
+            return redirect()->to('/login');
         }
     }
 
