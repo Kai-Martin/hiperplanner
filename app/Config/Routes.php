@@ -42,7 +42,7 @@ $path = '/~kaimartin/hiperplanner';
 
 // defualt route:
 $routes->get($path, 'Home::index');
-$routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
+$routes->get($path . '/dashboard', 'Dashboard::index',['filter' => 'auth']);
 
 // example route:
 $routes->get($path . '/test', 'Home::index');
