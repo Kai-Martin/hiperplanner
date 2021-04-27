@@ -28,8 +28,8 @@
                         <input type="password" name="password" class="form-control" id="InputForPassword">
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
-                    <p>Don't have an account?</p>
-                    <a href="<?=base_url()?>/register" class="btn btn-outline-success">Login</a>
+                    <h3>Don't have an account?</h3>
+                    <a href="<?=base_url()?>/register" class="btn btn-outline-success">Register</a>
                 </form>
             </div>
 
