@@ -44,6 +44,7 @@ $path = '/~kaimartin/hiperplanner';
 $routes->get($path, 'Pages::index');
 $routes->get($path . '/login', 'Login::index');
 $routes->get($path . '/register', 'Register::index');
+$routes->get($path . '/register/save', 'Register::save');
 $routes->get($path . '/dashboard', 'Dashboard::index',['filter' => 'auth']);
 $routes->get('(:any)', 'Pages::showme/$1');
 
