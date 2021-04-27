@@ -28,7 +28,7 @@
                         <input type="password" name="password" class="form-control" id="InputForPassword">
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
-                    <h3>Don't have an account?</h3>
+                    <h5>Don't have an account?</h5>
                     <a href="<?=base_url()?>/register" class="btn btn-outline-success">Register</a>
                 </form>
             </div>
