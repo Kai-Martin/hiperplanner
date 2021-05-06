@@ -9,7 +9,7 @@ class Addentry extends Controller
     {
         helper(['form']);
         echo view('templates/header');
-        echo view('auth/Addentry');
+        echo view('pages/Addentry');
     		echo view('templates/footer');
     }
 }
