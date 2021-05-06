@@ -12,5 +12,4 @@ class Login extends Controller
         echo view('auth/Addentry');
     		echo view('templates/footer');
     }
-  }
 }
