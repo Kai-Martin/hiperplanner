@@ -3,7 +3,7 @@
 use CodeIgniter\Controller;
 use App\Models\UserModel;
 
-class Login extends Controller
+class Addentry extends Controller
 {
     public function index()
     {
