@@ -19,7 +19,7 @@ class Login extends Controller
         $model = new UserModel();
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
-        $data = $model->where('user_email', $email)->first();
+        $data = $model->where('email', $email)->first();
         if($data){
             $pass = $data['user_password'];
             $verify_pass = password_verify($password, $pass);
