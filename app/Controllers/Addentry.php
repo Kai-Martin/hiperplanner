@@ -12,4 +12,27 @@ class Addentry extends Controller
         echo view('pages/Addentry');
     		echo view('templates/footer');
     }
+    public function save()
+    {
+      helper(['form']);
+
+      $rules = [
+          'date_start'        => 'required|min_length[10]|max_length[10]',
+          'date_end'          => 'required|min_length[10]|max_length[10]'
+      ];
+      if($this->validate($rules)){
+
+
+
+      //     $model = new AbsenceModel();
+      //     $data = [
+      //         'date'    => $this->request->getVar('date'),
+      //     ];
+      //     $model->save($data);
+      //     return redirect()->to('/addentry');
+      // }else{
+      //     $data['validation'] = $this->validator;
+      //     echo view('addentry', $data);
+      }
+    }
 }
