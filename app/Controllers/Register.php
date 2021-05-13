@@ -18,6 +18,7 @@ class Register extends Controller
     public function save()
     {
         echo("made it to save");
+        die();
         //include helper form
         helper(['form']);
         //set rules validation form
