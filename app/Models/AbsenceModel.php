@@ -5,4 +5,14 @@ use CodeIgniter\Model;
 class AbsenceModel extends Model{
     protected $table = 'Absences';
     protected $allowedFields = ['date','user_id'];
+
+    protected $useAutoIncrement = true;
+
+    protected $returnType     = 'array';
+    protected $useSoftDeletes = true;
+
+    protected $useTimestamps = false;
+    protected $createdField  = 'created_at';
+    protected $updatedField  = 'updated_at';
+    protected $deletedField  = 'deleted_at';
 }
