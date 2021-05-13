@@ -6,7 +6,7 @@
                 <?php if(session()->getFlashdata('msg')):?>
                     <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
                 <?php endif;?>
-                <form action="/login/auth" method="post">
+                <form action="<?=base_url()?>/login/auth" method="post">
                     <div class="mb-3">
                         <label for="InputForEmail" class="form-label">Email address</label>
                         <input type="email" name="email" class="form-control" id="InputForEmail" value="<?= set_value('email') ?>">
