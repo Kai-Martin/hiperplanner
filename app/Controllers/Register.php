@@ -17,6 +17,7 @@ class Register extends Controller
 
     public function save()
     {
+        echo("made it to save");
         //include helper form
         helper(['form']);
         //set rules validation form
@@ -28,6 +29,7 @@ class Register extends Controller
         ];
 
         if($this->validate($rules)){
+            echo("made it through the validation");
             $model = new UserModel();
             $data = [
                 'name'     => $this->request->getVar('name'),
