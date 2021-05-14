@@ -41,16 +41,16 @@ $routes->setAutoRoute(true);
 $path = '/~kaimartin/hiperplanner';
 
 // defualt route:
-$routes->get($path, 'Pages::index');
+$routes->get('/', 'Pages::index');
 
-$routes->get($path . '/login', 'Login::index');
-$routes->get($path . '/login/auth', 'Login::auth');
-$routes->get($path . '/addentry', 'Addentry::index');
+$routes->get('/login', 'Login::index');
+$routes->get('/login/auth', 'Login::auth');
+$routes->get('/addentry', 'Addentry::index');
 
-$routes->get($path . '/register', 'Register::index');
-$routes->get($path . '/register/save', 'Register::save');
+$routes->get('/register', 'Register::index');
+$routes->get('/register/save', 'Register::save');
 
-$routes->get($path . '/dashboard', 'Dashboard::index',['filter' => 'auth']);
+$routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
 
 $routes->get('(:any)', 'Pages::showme/$1');
 
