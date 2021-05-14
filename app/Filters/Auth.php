@@ -9,8 +9,10 @@ class Auth implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         // if user not logged in
-        if(! session()->get('logged_in')){
+        $session = session();
+        if( !$session->get('logged_in') ){
             // then redirct to login page
+            $session->setFlashdata('msg', 'Must be logged in to view page.');
             return redirect()->to('/login');
         }
     }

@@ -7,6 +7,7 @@ class Register extends Controller
 {
     public function index()
     {
+        
         //include helper form
         helper(['form']);
         $data = [];
