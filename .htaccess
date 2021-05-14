@@ -1,5 +1,8 @@
 <IfModule mod_rewrite.c>
     RewriteEngine on
+
+    RewriteBase /hiperplanner
+
     # Redirect requests to public
     RewriteRule  ^$ public/    [L]
     RewriteRule  (.*) public/$1 [L]

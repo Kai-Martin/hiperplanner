@@ -11,6 +11,7 @@ class Pages extends BaseController
 	}
 
 	function showme($page = 'home'){
+		die('here');
 
 		if ( ! is_file(APPPATH.'/Views/pages/'.$page.'.php'))
 		{

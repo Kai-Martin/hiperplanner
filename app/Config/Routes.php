@@ -24,6 +24,7 @@ $routes->setTranslateURIDashes(true);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 
+
 /*
  * --------------------------------------------------------------------
  * Route Definitions
@@ -33,15 +34,11 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-// $routes->get('/', 'Home::index');
-
-// Prefix workaround for mod_userdir issue
-// Make ALL your routes start with the "path" by pre-pending
-// the route pattern with this variable:
-$path = '/~kaimartin/hiperplanner';
+ $routes->get('/', 'Home::index');
+ $routes->get('/home', 'Home::index');
 
 // defualt route:
-$routes->get('/', 'Pages::index');
+//$routes->get('/', 'Pages::index');
 
 $routes->get('/login', 'Login::index');
 $routes->get('/login/auth', 'Login::auth');
@@ -52,7 +49,7 @@ $routes->get('/register/save', 'Register::save');
 
 $routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
 
-$routes->get('(:any)', 'Pages::showme/$1');
+//$routes->get('(:any)', 'Pages::showme/$1');
 
 /*
  * --------------------------------------------------------------------
