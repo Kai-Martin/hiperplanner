@@ -8,9 +8,10 @@ class Addentry extends Controller
     public function index()
     {
         helper(['form']);
+
         echo view('templates/header');
         echo view('pages/Addentry');
-    		echo view('templates/footer');
+    	echo view('templates/footer');
     }
     public function save()
     {
@@ -20,8 +21,13 @@ class Addentry extends Controller
           'date_start'        => 'required|min_length[10]|max_length[10]',
           'date_end'          => 'required|min_length[10]|max_length[10]'
       ];
-      if($this->validate($rules)){
+      if( $this->validate($rules) ){
+        $start = new DateTime( $this->request->getVar('date_start') );
+        $end = new DateTime( $this->request->getVar('date_end') );
 
+        $interval = $end->diff($start);
+
+        $days = $interval->d;
 
 
       //     $model = new AbsenceModel();
