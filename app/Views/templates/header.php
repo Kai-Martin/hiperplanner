@@ -21,6 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
+<<<<<<< Updated upstream
               <a class="nav-link" href="<?=base_url()?>">Calendar</a>
             </li>
             <li class="nav-item">
@@ -35,6 +36,22 @@
             <?php else:?>
                 <li>
                     <a href="<?=base_url()?>/logout" class="btn btn-outline-danger">Logout</a>
+=======
+              <a class="nav-link" href="<?=base_url()?>/dashboard">Dashboard</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <?php if( isset( $_SESSION['logged_in']) && $_SESSION['logged_in'] ):?>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?=base_url()?>/addentry">Add Time Away</a>
+                </li>
+                <li>
+                    <a href="<?=base_url()?>/logout" class="btn btn-outline-danger">Logout</a>
+                </li>
+            <?php else:?>
+                <li>
+                    <a href="<?=base_url()?>/login" class="btn btn-outline-success">Login</a>
+>>>>>>> Stashed changes
                 </li>
             <?php endif;?>
 

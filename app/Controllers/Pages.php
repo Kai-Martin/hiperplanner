@@ -5,6 +5,7 @@ class Pages extends BaseController
 {
 	public function index()
 	{
+		$session = session();
 		echo view('templates/header');
 		echo view('pages/home');
 		echo view('templates/footer');

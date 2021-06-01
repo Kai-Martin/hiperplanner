@@ -35,7 +35,9 @@ $routes->get('/', 'Pages::index');
 
 $routes->get('/login', 'Login::index');
 $routes->get('/login/auth', 'Login::auth');
-$routes->get('/addentry', 'Addentry::index');
+$routes->get('/logout', 'Login::logout');
+$routes->get('/addentry', 'Addentry::index',['filter' => 'auth']);
+$routes->get('/addentry/save', 'Addentry::save');
 
 $routes->get('/register', 'Register::index');
 $routes->get('/register/save', 'Register::save');
