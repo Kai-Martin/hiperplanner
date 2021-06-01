@@ -16,7 +16,6 @@ class Addentry extends Controller
         echo view('pages/Addentry');
       	echo view('templates/footer');
 
->>>>>>> Stashed changes
     }
     public function save()
     {
