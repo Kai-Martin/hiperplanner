@@ -14,9 +14,6 @@ class Addentry extends Controller
 
         echo view('templates/header');
         echo view('pages/Addentry');
-<<<<<<< Updated upstream
-    	echo view('templates/footer');
-=======
       	echo view('templates/footer');
 
 >>>>>>> Stashed changes
@@ -32,14 +29,6 @@ class Addentry extends Controller
           'date_end'          => 'required|min_length[10]|max_length[10]'
       ];
       if( $this->validate($rules) ){
-<<<<<<< Updated upstream
-        $start = new DateTime( $this->request->getVar('date_start') );
-        $end = new DateTime( $this->request->getVar('date_end') );
-
-        $interval = $end->diff($start);
-
-        $days = $interval->d;
-=======
         $start = new \DateTime( $this->request->getVar('date_start') );
         $end = new \DateTime( $this->request->getVar('date_end') );
 
@@ -54,7 +43,6 @@ class Addentry extends Controller
         for($d = 0; $d <= $days; $d++){
 
           date_add($start, new \DateInterval('P1D'));
->>>>>>> Stashed changes
 
           $data = [
               'date'    => $start -> format('Y-m-d'),
